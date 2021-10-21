@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  align-self: center;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  font-weight: 700;
+}
+
+button[data-action='start'] {
+  color: #198754;
+}
+
+button[data-action='stop'] {
+  color: #dc3545;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 18px;
+  }
+}
